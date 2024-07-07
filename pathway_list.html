@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<title>Colono Base</title>
+<link rel="stylesheet" href="pathway_list.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+<body>
+    
+<section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a href= "home.html" class="navbar-brand" ><img src="image/logo.png"><span class="promo-title">ColonoBase</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="query.html">Query</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="pathway_list.html">Pathways</a>
+          </li>
+        <li class="nav-item">
+        <a class="nav-link" href="natural_compound_list.html">Compounds</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gene <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+            <div class="sub-menu-1">
+              <ul>
+                <li><a href="gene_list.html">Gene information</a></li>
+                <li><a href="ppi.html">Protein-Protein interactions</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>   
+  </section>
+    
+
+    <!---------------------------------GENE INFO section-------------------------->
+    
+
+<section id="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="table-subheading" style="margin-top: 40px; font-size:35px">Colon Cancer</h2>
+               <p class="path_text">Colon cancer is the third largest cause of cancer-related deaths in Western countries. CRC arises from the colorectal epithelium as a result of the accumulation of genetic alterations in defined oncogenes and tumour suppressor genes (TSG). Two major mechanisms of genomic instability have been identified in sporadic CRC progression. The first, known as chromosomal instability (CIN), results from a series of genetic changes that involve the activation of oncogenes such as K-ras and inactivation of TSG such as p53, DCC/Smad4, and APC. The second, known as microsatellite instability (MSI), results from inactivation of the DNA mismatch repair genes MLH1 and/or MSH2 by hypermethylation of their promoter, and secondary mutation of genes with coding microsatellites, such as transforming growth factor receptor II (TGF-RII) and BAX. Hereditary syndromes have germline mutations in specific genes (mutation in the tumour suppressor gene APC on chromosome 5q in FAP, mutated DNA mismatch repair genes in Hereditary Non-polyposis Colorectal Cancer (HNPCC)).</p> 
+                
+                
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><strong>Pathway Name: </strong>Colorectal cancer - Homo sapiens (human)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pathway Source: </strong><a href="https://www.genome.jp/pathway/hsa05210" target="_blank">KEGG Pathway</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h2 class="table-subheading" style="margin-top: 40px; font-size:25px">List of Signaling Pathways involved in Colon Cancer</h2>
+                <table  id="pathway-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Pathway Name</th>
+                            <th scope="col">Pathway Source</th>
+                        </tr>
+                    </thead> 
+                    <tbody>
+                        <tr>
+                            <td><a href="EGFR_path.html">EGFR/MAPK signaling pathway</a></td>
+                            <td><a href="https://www.genome.jp/pathway/hsa04010" target="_blank">KEGG Pathway</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="Notch_path.html">Notch signaling pathway</a></td>
+                            <td><a href="https://www.kegg.jp/pathway/hsa04330" target="_blank">KEGG Pathway</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="pi3k_path.html">PI3K/AKT/mTOR signaling pathway</a></td>
+                            <td><a href="https://www.genome.jp/pathway/hsa04151" target="_blank">KEGG Pathway</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="TGF_path.html">TGF-beta signaling pathway</a></td>
+                            <td><a href="https://www.genome.jp/pathway/hsa04350" target="_blank">KEGG Pathway</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="wnt_path.html">Wnt signaling pathway</a></td>
+                            <td><a href="https://www.genome.jp/pathway/hsa04310" target="_blank">KEGG Pathway</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="NFKB_path.html">NF-kappa B signaling pathway</a></td>
+                            <td><a href="https://www.kegg.jp/pathway/hsa04064" target="_blank">KEGG Pathway</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!--------- References --------->
+
+<section id="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="reference" style="margin-top: 10px; color: darkblue">References</h3>
+                <p class="ref_1">Koveitypour, Z., Panahi, F., Vakilian, M. et al. Signaling pathways involved in colorectal cancer progression. Cell Biosci 9, 97 (2019). <a href="https://cellandbioscience.biomedcentral.com/articles/10.1186/s13578-019-0361-4" target="_blank">https://doi.org/10.1186/s13578-019-0361-4</a></p>
+                
+                <p class="ref_2">Nguyen LH, Goel A, Chung DC. Pathways of Colorectal Carcinogenesis. Gastroenterology. 2020 Jan;158(2):291-302. <a href="https://www.gastrojournal.org/article/S0016-5085(19)41441-8/fulltext?referrer=https%3A%2F%2Fpubmed.ncbi.nlm.nih.gov%2F" target="_blank">doi: 10.1053/j.gastro.2019.08.059. Epub 2019 Oct 14</a>. <a href="https://pubmed.ncbi.nlm.nih.gov/31622622/" target="_blank">PMID: 31622622</a>; PMCID: PMC6981255.</p>
+                
+                <p class="ref_3">Huang Z, Yang M. Molecular Network of Colorectal Cancer and Current Therapeutic Options. Front Oncol. 2022 Apr 6;12:852927. <a href="https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2022.852927/full" target="_blank">doi: 10.3389/fonc.2022.852927</a>. PMID: 35463300; PMCID: PMC9018988.</p>
+                
+                <p class="ref_4">Kanehisa, M., & Goto, S. (2000). KEGG: kyoto encyclopedia of genes and genomes. Nucleic acids research, 28(1), 27-30. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC102409/" target="_blank">https://doi.org/10.1093/nar/28.1.27</a>.</p>
+                
+            <ul class="ref_image">
+            <li><a href="https://www.genome.jp/kegg/pathway.html" target="_blank"><img src="image/kegg.jpeg"></a></li>
+            
+            <li><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank"><img src="image/pubmed.png"></a></li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+
+<!--------- Footer Section --------->
+    
+<footer>
+  <div class="footer-container">
+    <div class="footer-links">
+      <a href="home.html">Home</a>
+      <a href="Query.html">Query</a>
+      <a href="pathway_list.html">Pathways</a>
+        <a href="natural_compound_list.html">Compounds</a>
+        <a href="gene_list.html">Gene</a>
+      <a href="faq.html">FAQs</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="social-icons">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+    </div>
+  </div>
+</footer>   
+ 
+   
+</body>
+</html>

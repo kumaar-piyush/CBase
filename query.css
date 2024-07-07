@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    background-image: linear-gradient(45deg, rgba(7,4,69,1) 100%, rgba(144,0,148,1) 100%);
+    padding: 0 !important;
+}
+
+nav img {
+    width: 60px;
+    padding-left: 5px;
+}
+
+.navbar-brand {
+    padding: 10px 15px;   
+}
+
+.promo-title {
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 10px; /* Move text to the right */
+}
+
+.navbar-nav li {
+    padding: 0 5px;
+    margin-right: 20px;
+}
+
+.navbar-nav li a {
+    color: #fff !important;
+    font-weight: 700;
+    float: right;
+    text-align: left;
+}
+
+.nav-link, .navbar-nav li:hover {
+    background: #7e1a7a;
+    border-radius: 15px;
+}
+
+.fa-bars {
+    color: #fff;
+    font-size: 30px !important;
+}
+
+.navbar-toggler {
+    outline: none !important;
+}
+
+.sub-menu-1 {
+    display: none;
+}
+
+.navbar-nav li:hover .sub-menu-1 {
+    display: block;
+    position:absolute;
+    background: rgb(7,4,69);
+    margin-top: 40px;
+    margin-right: 35px;
+    left: 74%; /* Align dropdown menu to the left */
+    width: 100%; /* Set width to match parent */
+    text-align: center; /* Center align the dropdown menu */
+    border-radius: 0 0 5px 5px; /* Adjust border radius */
+}
+
+.sub-menu-1 ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.sub-menu-1 ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0; /* Adjust padding */
+    width: 100%; /* Set width to match parent */
+}
+
+.sub-menu-1 ul li a:hover {
+    background-color: #7e1a7a;
+    border-radius: 15px;
+}
+
+
+
+
+/* query.css */
+
+.container {
+  width: 70%; /* Adjust the width as needed */
+  margin: 0 auto;
+}
+
+.rectangle-box {
+  border: 8px solid #070445; /* Border color */
+  padding: 10px;
+  margin-top: 40px; /* Adjust the top margin as needed */
+  margin-bottom: 40px;
+  border-radius: 20px; /* Adjust border radius as needed */
+  text-align: center; /* Center align text within the box */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Adding shadow effect */
+}
+
+.panel-body {
+  align-items: center;
+}
+
+.search_table {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.header {
+  color: #ffffff;
+}
+
+#query_form {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.col1 {
+  flex: 1;
+}
+
+.col2 {
+  flex: 2;
+}
+
+.form-control {
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn-row {
+  display: flex;
+  justify-content: center; /* Center align buttons */
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.btn {
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 16px; /* Increase font size */
+  font-weight:600; /* Make text bold */
+}
+
+.clear-btn {
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.clear-btn:hover {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+
+.search-btn {
+  color: #fff;
+  background-color: #007bff; /* Primary button color */
+  border: 1px solid #007bff;
+}
+
+.search-btn:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  border-color: #0056b3;
+}
+
+
+
+/*------------------------footer------------------------*/
+
+footer {
+  background-image: linear-gradient(45deg, rgba(7,4,69,1) 100%, rgba(144,0,148,1) 100%);
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footer-links a {
+  color: #fff;
+  font-size: 20px;
+    font-weight: 600;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ccc;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ccc;
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<title>Colono Base</title>
+<link rel="stylesheet" href="query.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        /* Add your custom CSS styles here if needed */
+        .suggestion-list {
+            border: 2px solid #ccc;
+            background-color: #fff;
+            position: absolute;
+            width: 67%;
+            max-height: 100px;
+            overflow-y: auto;
+            display: none;
+        }
+        .suggestion-list div {
+            padding: 10px;
+            cursor: pointer;
+        }
+        .suggestion-list div:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+    
+</head>
+<body>
+   
+<section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="home.html"><img src="image/logo.png"><span class="promo-title">ColonoBase</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="query.html">Query</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="pathway_list.html">Pathways</a>
+          </li>
+        <li class="nav-item">
+        <a class="nav-link" href="natural_compound_list.html">Compounds</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gene <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+            <div class="sub-menu-1">
+              <ul>
+                <li><a href="gene_list.html">Gene information</a></li>
+                <li><a href="ppi.html">Protein-Protein interactions</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>   
+    </section>
+    
+      
+    
+<section id="content">
+<div class="container">
+<div class="rectangle-box">
+<div class="row">
+<div class="col-md-11">
+<div class="panel-body" align="center">
+  <div class="search_table" style="height:60vh;margin-top:5%;margin-bottom:5%;">
+    <div id="container" style="height:60vh;margin-top:5%;margin-bottom:5%;"> 
+      <div class="header">
+        <h2 style="color: #7e1a7a; font-size: 40px;font-weight: 700; margin-left:40px;" >Search Database</h2>
+      </div> 
+      <div id="query_form" style="margin-top:5%;margin-bottom:5%;">
+        <div>
+        
+          <!-- Search Box 1: Gene name/symbol -->
+        <div class="row">
+        <div class="col1">
+        <label style="font-size: 18px; font-weight: bold;">Gene name/symbol</label>
+        </div>
+        <div class="col2">
+        <input type="search" class="form-control" placeholder="Search by gene symbol" name="search_by_gene_name_or_symbol" id="searchBox1" title="Type the first 2 letters of the gene to get you started" autocomplete="off">
+        <div id="suggestion-list1" class="suggestion-list"></div>
+        </div>
+        </div>
+                                    
+        <!-- Search Box 2: Protein name -->
+        <div class="row">
+        <div class="col1">
+        <label style="font-size: 18px; font-weight: bold;">Protein name</label>
+        </div>
+        <div class="col2">
+        <input type="search" class="form-control" placeholder="Search by protein name" name="search_by_protein_name" id="searchBox2" autocomplete="off">
+        <div id="suggestion-list2" class="suggestion-list"></div>
+        </div>
+        </div>
+                                    
+        
+            
+            
+          <!-- Search Box 3: Pathway -->
+        <div class="row">
+        <div class="col1">
+        <label style="font-size: 18px; font-weight: bold;">Pathway</label>
+        </div>
+        <div class="col2">
+        <input type="search" class="form-control" placeholder="Search by pathway name" name="search_by_pathway" id="searchBox3" autocomplete="off">
+        <div id="suggestion-list3" class="suggestion-list"></div>
+        </div>
+        </div>
+            
+            
+          <!-- Search Box 4: Plant-based bioactive compounds -->
+         <div class="row">
+         <div class="col1">
+         <label style="font-size: 18px; font-weight: bold;">Plant-based bioactive compounds</label>
+         </div>
+         <div class="col2">
+         <input type="search" class="form-control" placeholder="Search by compounds name" name="search_by_compounds_name" id="searchBox4" autocomplete="off">
+         <div id="suggestion-list4" class="suggestion-list"></div>
+         </div>
+         </div>
+            
+            
+          <!-- Search Box 5: Protein-Protein interactions -->
+        <div class="row">
+        <div class="col1">
+        <label style="font-size: 18px; font-weight: bold;">Protein-Protein interactions</label>
+        </div>
+         <div class="col2">
+         <input type="search" class="form-control" placeholder="Search by gene name" name="search_by_gene_name" id="searchBox5" autocomplete="off">
+           <div id="suggestion-list5" class="suggestion-list"></div>
+          </div>
+          </div>
+             <!-- Add more search boxes as needed -->
+            
+          <input type="hidden" value="nothing" id="page_is_dirty" />
+          <div class="btn-row">
+                  <button class="btn btn-default clear-btn" style="font-size: 18px; font-weight: bold;">Clear</button>
+                  <button class="btn btn-primary search-btn" id="submitSearchBtn" onclick="openGeneListWithSearch()" style="font-size: 18px; font-weight: bold; color: #fff;" >Search</button>
+
+                </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    
+    
+<!--------- Footer Section --------->
+    
+<footer>
+  <div class="footer-container">
+    <div class="footer-links">
+      <a href="home.html">Home</a>
+      <a href="Query.html">Query</a>
+      <a href="pathway_list.html">Pathways</a>
+        <a href="natural_compound_list.html">Compounds</a>
+        <a href="gene_list.html">Gene</a>
+      <a href="faq.html">FAQs</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="social-icons">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+    </div>
+  </div>
+</footer>
+    
+<div id="result"></div>
+
+<script src="query.js"></script>
+    
+</body>
+</html>
