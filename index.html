@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<title>Colono Base</title>
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+<section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a href= "home.html" class="navbar-brand" ><img src="image/logo.png"><span class="promo-title">ColonoBase</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="query.html">Query</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="pathway_list.html">Pathways</a>
+          </li>
+        <li class="nav-item">
+        <a class="nav-link" href="natural_compound_list.html">Compounds</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gene <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+            <div class="sub-menu-1">
+              <ul>
+                <li><a href="gene_list.html">Gene information</a></li>
+                <li><a href="ppi.html">Protein-Protein interactions</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>   
+  </section>
+
+   
+     
+ <!---------------------------------content section-------------------------->     
+    
+<section id="content">
+<div class="container">
+<div class="row">
+<div class="col-md-13">
+  <p class="first-text">Colon Cancer, also known as colorectal cancer (CRC), is a type of cancer that arises from the growth of cells in a part of the large intestine called the colon. It usually develops from polyps or growths in the inner lining of the colon.  It is the third most common cancer and has the second highest mortality rate reported worldwide. More than 90% of CRCs are adenocarcinoma, a malignant neoplasm that develops from glandular epithelial cells of the colon and rectum.</p>
+</div>
+</div>
+</div>
+</section>
+    
+<!-- Image Slider Section -->
+    
+<section id="image-slider">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="image/Colon_cancer.png" target="_blank">
+              <img class="d-block w-100" src="image/Colon_cancer.png" alt="First slide">
+                </a>
+                <div class="text"><a href="#" style="color: black">Colon Cancer | Casues | Treatment | Symptoms</a></div>
+            </div>
+              <div class="carousel-item">
+                  <a href="image/veen.png" target="_blank">
+              <img class="d-block w-100" src="image/veen.png" alt="Second slide">
+                  </a>
+                  <div class="text">Venn diagram : common differentially expressed genes</div>
+              </div>
+            <div class="carousel-item">
+                <a href="image/pie.jpg" target="_blank">
+              <img class="d-block w-100" src="image/pie.jpg" alt="Third slide">
+                </a>
+                <div class="text">High Expression Genes of Colon Cancer</div>
+            </div>
+            <div class="carousel-item">
+              <a href="image/wnt1.png" target="_blank">
+                  <img class="d-block w-100" src="image/wnt1.png" alt="Forth slide"></a>
+                <div class="text-container"><div class="text"><a href="wnt_path.html" style="color: black">Wnt signaling pathway</a></div></div>
+            </div>
+              <div class="carousel-item">
+              <a href="image/NFKB.png" target="_blank">
+                  <img class="d-block w-100" src="image/NFKB.png" alt="Forth slide"></a>
+                <div class="text-container"><div class="text"><a href="NFKB_path.html" style="color: black">NF-kappa B signaling pathway</a></div></div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+<!------- Search Box ------->
+        <div class="col-md-5">
+        <div class="search-box">
+           <form id="search-form">
+              <label for="search"> Quick search </label>
+            <input type="text" id="search" name="search" placeholder="search colon cancer... "autocomplete="off">
+            <button type="submit" id="searchButton">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+            <div class="result-box" >
+            </div>
+          <div class="search-by">
+            <h4>Search by</h4>
+            <ul>
+              <li>Gene symbol e.g. (<a href="CA7.html" style="color: white">CA7</a>) </li>
+              <li>Protein name e.g. (<a href="#" style="color: white">Carbonic anhydrase 7</a>) </li>
+                <li>Pathway e.g. (<a href="wnt_path.html" style="color: white">Wnt signaling</a>) </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+<!--------- End of Search Box --------->
+    </div>
+  </div>
+</section>
+<!--------- second image slider content statics graph  --------->
+    
+    
+    <div class="main-wrapper">
+    <div class="parent-container">
+        <div class="container1">
+            <div class="content-container">
+                
+                <p class="first-text">According to The ColonoBase, using integrated bioinformatics and statistical approaches, we identified common differentially expressed genes (cDEGs) involved in the initiation and progression of colorectal cancer (CRC) from multiple transcriptomics datasets. This database catalogs a variety of data types related to colorectal cancer research, including genomic data, clinical data, and various biomolecular datasets, facilitating a comprehensive analysis and understanding of the disease.</p>
+                
+                <p class="first-text">Pathway data was sourced from the Reactome and KEGG databases. The protein-protein interaction network of common differentially expressed genes (cDEGs) was constructed using the STRING database and BioGRID. However, the results obtained are dispersed across thousands of scientific articles and websites. A resource that integrates all these heterogeneous data would greatly aid the biomedical research community in the fight against colorectal cancer.</p>
+                
+            </div>
+        </div>
+        <div class="container2">
+            <div class="slider1">
+                <div class="slide1">
+                    <img src="image/img1.png" alt="Image 1">
+                    <div class="caption1"></div>
+                </div>
+                <div class="slide2">
+                    <a href="image/img1.png" target="_blank">
+                        <img src="image/img1.png" alt="Image 2"></a>
+                    <div class="caption1"></div>
+                </div>
+                <div class="slide2">
+                    <a href="image/img2.png" target="_blank">
+                        <img src="image/img2.png" alt="Image 3"></a>
+                    <div class="caption1"></div>
+                </div>
+                <div class="slide2">
+                    <a href="image/img3.png" target="_blank">
+                        <img src="image/img3.png" alt="Image 4"></a>
+                    <div class="caption1"></div>
+                </div>
+                <div class="slide2">
+                    <a href="image/img4.png" target="_blank">
+                        <img src="image/img4.png" alt="Image 5"></a>
+                    <div class="caption1"></div>
+                </div>
+                <div class="slide2">
+                    <a href="image/img5.png" target="_blank">
+                        <img src="image/img5.png" alt="Image 6"></a>
+                    <div class="caption1"></div>
+                </div>
+                <div class="slide2">
+                    <a href="image/img6.png" target="_blank">
+                        <img src="image/img6.png" alt="Image 7"></a>
+                    <div class="caption1"></div>
+                </div>
+                <!-- Add more slides as needed -->
+
+                <a class="prev1" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next1" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+        <div class="container3">
+            <div class="info-container">
+                
+                <p class="first-text">According to updated estimates from the International Agency for Research on Cancer (IARC), global cancer statistics for the year 2022 reveal that lung cancer was the most frequently diagnosed cancer, followed by breast cancer and colorectal cancer in 2022, , responsible for almost 2.5 million new cases, or one in eight cancers worldwide (12.4% of all cancers globally), followed by cancers of the female breast (11.6%), colorectum (9.6%), prostate (7.3%), and stomach (4.9%).
+                The estimated incidence rates of colorectal cancer are highest in Australia/New Zealand, Western Africa, and South-Central Asia.</p>
+                
+                <h3 class="reference" style="margin-top: 10px; color: darkblue">References</h3>
+                <p class="ref_1">Ferlay J, Ervik M, Lam F, Laversanne M, Colombet M, Mery L, Piñeros M, Znaor A, Soerjomataram I, Bray F (2024).Global Cancer Observatory: Cancer Today. Lyon, France: International Agency for Research on Cancer. Availablefrom: <a href="https://gco.iarc.who.int/today/en" target="_blank">https://gco.iarc.who.int/today</a>, accessed [05 June 2024].</p>
+                
+                <p class="ref_2">Bray F, Laversanne M, Sung H, et al. Global cancer statistics 2022: GLOBOCAN estimates of incidence and mortality worldwide for 36 cancers in 185 countries. CA Cancer J Clin. 2024; 74(3): 229-263. <a href="https://acsjournals.onlinelibrary.wiley.com/doi/10.3322/caac.21834" target="_blank"> https://doi:10.3322/caac.21834 </a></p>
+                <p  style="margin-top: 10px; color: darkblue; font-size: 18px; font-weight: 500"> Each record in the ColonoBase is also hyperlinked to various other similar databases like:</p>
+            <ul class="ref_image">
+            <li><a href="https://www.ncbi.nlm.nih.gov/" target="_blank"><img src="image/ncbi.png"></a></li>
+            <li><a href="https://www.genenames.org/" target="_blank"><img src="image/hgnc.jpeg"></a></li>
+            <li><a href="https://www.uniprot.org/" target="_blank"><img src="image/uniprot.png"></a></li>
+            <li><a href="https://pubchem.ncbi.nlm.nih.gov/" target="_blank"><img src="image/PubChem.png"></a></li>
+            <li><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank"><img src="image/pubmed.png"></a></li>
+                 <li><a href="https://www.genome.jp/kegg/pathway.html" target="_blank"><img src="image/kegg.jpeg"></a></li>
+                <li><a href="https://webs.iiitd.edu.in/raghava/npact/index.html" target="_blank"><img src="image/npact.png"></a></li>
+                <li><a href="https://string-db.org/" target="_blank"><img src="image/string.png"></a></li>
+                <li><a href="https://www.ncbi.nlm.nih.gov/geo/" target="_blank"><img src="image/geo.png"></a></li>
+                <li><a href="https://www.ebi.ac.uk/chembl/" target="_blank"><img src="image/chembl.png"></a></li>
+            <li><a href="http://www.swissadme.ch/" target="_blank"><img src="image/swiss.png"></a></li>
+                <li><a href="https://reactome.org/" target="_blank"><img src="image/reactome.png"></a></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+        
+        
+    <div class="container4">
+        <div class="flourish-container">
+            <div class="table-container">
+                <h2>Statistics</h2>
+                <table>
+                    <tr>
+                        <td>General Information</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Genes</td>
+                        <td>107</td>
+                    </tr>
+                    <tr>
+                        <td>Pathways</td>
+                        <td>52</td>
+                    </tr>
+                    <tr>
+                        <td>Protein-protein interactions</td>
+                        <td>90</td>
+                    </tr>
+                    <tr>
+                        <td>Plant-based bioactive compounds</td>
+                        <td>773</td>
+                    </tr>
+                    <tr>
+                        <td>Total No. of Refrences</td>
+                        <td>170</td>
+                    </tr>
+                    
+                    <!-- Add more rows as needed -->
+                </table>
+            </div>
+
+            <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/18203386">
+                <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+
+            <div class="flourish-embed flourish-webgl" data-src="visualisation/18203582">
+                <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slide2");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+    }
+</script>
+
+ <!--------- END of second image slider content statics graph  --------->   
+    
+<!--------- Footer Section --------->
+    
+<footer>
+  <div class="footer-container">
+    <div class="footer-links">
+      <a href="home.html">Home</a>
+      <a href="Query.html">Query</a>
+      <a href="pathway_list.html">Pathways</a>
+        <a href="natural_compound_list.html">Compounds</a>
+        <a href="gene_list.html">Gene</a>
+      <a href="faq.html">FAQs</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="social-icons">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+    </div>
+  </div>
+</footer>
+
+ 
+    
+<script src="search.js"></script> 
+</body>
+</html>
