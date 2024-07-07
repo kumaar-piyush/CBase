@@ -1,0 +1,234 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: linear-gradient(45deg, rgba(185,112,191,0.9416141456582633) 1%, rgba(150,83,158,0.0032387955182072714) 100%);
+}
+
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    background-image: linear-gradient(45deg, rgba(7,4,69,1) 100%, rgba(144,0,148,1) 100%);
+    padding: 0 !important;
+}
+
+nav img {
+    width: 60px;
+    padding-left: 5px;
+}
+
+.navbar-brand {
+    padding: 10px 15px;   
+}
+
+.promo-title {
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 10px; /* Move text to the right */
+}
+
+.navbar-nav li {
+    padding: 0 5px;
+    margin-right: 20px;
+}
+
+.navbar-nav li a {
+    color: #fff !important;
+    font-weight: 700;
+    float: right;
+    text-align: left;
+}
+
+.nav-link, .navbar-nav li:hover {
+    background: #7e1a7a;
+    border-radius: 15px;
+}
+
+.fa-bars {
+    color: #fff;
+    font-size: 30px !important;
+}
+
+.navbar-toggler {
+    outline: none !important;
+}
+
+.sub-menu-1 {
+    display: none;
+}
+
+.navbar-nav li:hover .sub-menu-1 {
+    display: block;
+    position:absolute;
+    background: rgb(7,4,69);
+    margin-top: 40px;
+    margin-right: 35px;
+    left: 74%; /* Align dropdown menu to the left */
+    width: 100%; /* Set width to match parent */
+    text-align: center; /* Center align the dropdown menu */
+    border-radius: 0 0 5px 5px; /* Adjust border radius */
+}
+
+.sub-menu-1 ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.sub-menu-1 ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0; /* Adjust padding */
+    width: 100%; /* Set width to match parent */
+}
+
+.sub-menu-1 ul li a:hover {
+    background-color: #7e1a7a;
+    border-radius: 15px;
+}
+
+
+/*--------------content section----------------*/
+
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.contact-left-title h2{
+    font-weight: 700;
+    color: #61075d;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #61075d;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+.contact-left .contact-inputs,
+.contact-right .contact-inputs {
+    width: 400px; /* Increase the width */
+    height: 45px; /* Increase the height */
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+    margin-bottom: 20px; /* Add margin-bottom to create space between input fields */
+}
+.contact-left textarea {
+    height: 200px; /* Increase the height to move it towards the bottom */
+    padding-top: 15px;
+    border-radius: 20px;
+    margin-bottom: 40px; /* Increase the margin-bottom to create more space */
+}
+
+.contact-inputs:focus{
+    border:3px solid #ff994f;
+}
+.contact-inputs::placeholder{
+    color: #a9a9a9;
+}
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    cursor: pointer;
+}
+.contact-right img {
+    width: 400px;
+    filter: drop-shadow(-5px 5px 20px #6e066a); /* Add box-shadow for the image */
+}
+
+
+.contact-left button img{
+    height: 15px;
+}
+.contact-right img{
+    width: 400px;
+}
+@media (max-width:800px){
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right:{
+        display: none;
+    }
+}
+/*----------------------------------------------------*/
+
+/*------------------------footer------------------------*/
+
+footer {
+  background-image: linear-gradient(45deg, rgba(7,4,69,1) 100%, rgba(144,0,148,1) 100%);
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footer-links a {
+  color: #fff;
+  font-size: 20px;
+    font-weight: 600;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ccc;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ccc;
+}
+
+
+
+
+
