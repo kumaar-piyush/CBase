@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<title>Colono Base</title>
+<link rel="stylesheet" href="gene_list.css">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+        .highlight {
+            background-color: yellow;
+        }
+      #gene-table td:first-child,
+    #gene-table td:nth-child(3) {
+        font-weight: 500;
+    }
+    </style>
+</head>
+<body>
+    
+<section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a href= "home.html" class="navbar-brand" ><img src="image/logo.png"><span class="promo-title">ColonoBase</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="query.html">Query</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="pathway_list.html">Pathways</a>
+          </li>
+        <li class="nav-item">
+        <a class="nav-link" href="natural_compound_list.html">Compounds</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gene <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+            <div class="sub-menu-1">
+              <ul>
+                <li><a href="gene_list.html">Gene information</a></li>
+                <li><a href="ppi.html">Protein-Protein interactions</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>   
+  </section>
+    
+
+    <!---------------------------------GENE INFO section-------------------------->
+    
+
+<section id="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="table-subheading" style="margin-top: 40px">List of Expression Genes in Colon Tissue</h2>
+                <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search...">
+        <button type="button" id="search-button"><i class="fa fa-search"></i></button>
+    </div>
+        <style>
+        table a {
+        color: black;
+            font-weight: 500;}
+        table tr td:nth-child(3) a{
+        padding-left: 10px;
+             }
+                </style>
+                <table id="gene-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">S.No</th>
+                            <th scope="col">GENE NAME</th>
+                            <th scope="col">PROTEIN NAME</th>
+                            <th scope="col">PATHWAY</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+         <td>1</td>
+        <td><a href="CA7.html">CA7</a></td>
+        <td>Carbonic anhydrase 7 </td>
+         <td><a href="https://www.genome.jp/pathway/hsa01100+766">Metabolic pathways</a></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td><a href="GUCA2B.html">GUCA2B</a></td>
+        <td>Guanylate cyclase activator 2B</td>
+        <td><a href="#"> </a></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td><a href="PYY.html">PYY</a></td>
+        <td>Peptide YY</td>
+        <td><a href="https://www.genome.jp/pathway/hsa04080+5697">Neuroactive ligand-receptor interaction</a></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td><a href="CA1.html">CA1</a></td>
+        <td>Carbonic anhydrase 1</td>
+        <td><a href="https://www.genome.jp/pathway/hsa01100+759">Metabolic pathways</a></td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td><a href="GUCA2A.html">GUCA2A</a></td>
+        <td>Guanylin</td>
+        <td><a href="#"> </a></td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td><a href="GCG.html">GCG</a></td>
+        <td>Pro-glucagon</td>
+        <td><a href="https://www.genome.jp/pathway/hsa04024+2641">cAMP signaling pathway</a></td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td><a href="CA2.html">CA2</a></td>
+        <td>Carbonic anhydrase 2</td>
+        <td><a href="https://www.genome.jp/pathway/hsa00910+760">Nitrogen metabolism</a></td>
+    </tr>
+    <tr><td>8</td>
+        <td><a href="CWH43.html">CWH43</a></td>
+        <td>PGAP2-interacting protein</td>
+        <td><a href="#"> </a></td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td><a href="PKIB.html">PKIB</a></td>
+        <td>cAMP-dependent protein kinase inhibitor beta</td>
+        <td><a href="#"> </a></td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td><a href="SLC26A2.html">SLC26A2</a></td>
+        <td>Sulfate transporter</td>
+        <td><a href="https://www.genome.jp/pathway/hsa05208+1836">Chemical carcinogenesis - reactive oxygen species</a></td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td><a href="MS4A12.html">MS4A12</a></td>
+        <td>Membrane-spanning 4-domains subfamily A member 12</td>
+        <td><a href="#"> </a></td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td><a href="SLC4A4.html">SLC4A4</a></td>
+        <td>Electrogenic sodium bicarbonate cotransporter 1</td>
+        <td><a href="https://www.kegg.jp/pathway/hsa04972+8671">Pancreatic secretion</a></td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td><a href="CA4.html">CA4</a></td>
+        <td>Carbonic anhydrase 4</td>
+        <td><a href="https://www.kegg.jp/pathway/hsa01100+762">Metabolic pathways</a></td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td><a href="CD177.html">CD177</a></td>
+        <td>CD177 antigen</td>
+        <td><a href="#"> </a></td>
+    </tr>
+    <tr>
+        <td>15</td>
+        <td><a href="CHGA.html">CHGA</a></td>
+        <td>Chromogranin-A</td>
+        <td><a href="#"> </a></td>
+    </tr>
+    <tr>
+        <td>16</td>
+        <td><a href="SULT1A2.html">SULT1A2</a></td>
+        <td>Sulfotransferase 1A2</td>
+        <td><a href="https://www.kegg.jp/pathway/hsa05204+6799">Chemical carcinogenesis - DNA adducts</a></td>
+    </tr>
+    <tr>
+        <td>17</td>
+        <td><a href="LYPD8.html">LYPD8</a></td>
+        <td>Ly6/PLAUR domain-containing protein 8</td>
+        <td><a href="#"> </a></td>
+    </tr>
+    <tr>
+        <td>18</td>
+        <td><a href="CHP2.html">CHP2</a></td>
+        <td>Calcineurin B homologous protein 2</td>
+        <td><a href="#"> </a></td>
+    </tr>
+    <tr>
+        <td>19</td>
+        <td><a href="ZG16.html">ZG16</a></td>
+        <td>Zymogen granule membrane protein 16</td>
+        <td><a href="#"> </a></td>
+    </tr>
+    <tr>
+        <td>20</td>
+        <td><a href="BEST2.html">BEST2</a></td>
+        <td>Bestrophin-2</td>
+        <td><a href="https://www.kegg.jp/pathway/hsa04970+54831">Salivary secretion</a></td>
+    </tr>
+    <tr>
+        <td>21</td>
+        <td><a href="C2orf88.html">C2orf88</a></td>
+        <td>Small membrane A-kinase anchor protein</td>
+        <td><a href="#"> </a></td>
+    </tr>
+    <tr>
+        <td>22</td>
+        <td><a href="SCNN1B.html">SCNN1B</a></td>
+        <td>Amiloride-sensitive sodium channel subunit beta</td>
+        <td><a href="https://www.kegg.jp/pathway/hsa04960+6338">Aldosterone-regulated sodium reabsorption</a></td>
+    </tr>
+        <tr>
+            <td>23</td>
+            <td><a href="MT1H.html">MT1H</a></td>
+            <td>Metallothionein-1H</td>
+            <td><a href="https://www.kegg.jp/pathway/hsa04978+4496">Mineral absorption</a></td>
+    </tr> 
+    <tr>
+        <td>24</td>
+        <td><a href="PDE9A.html">PDE9A</a></td>
+        <td>High affinity cGMP-specific 3',5'-cyclic phosphodiesterase 9A</td>
+        <td><a href="https://www.kegg.jp/pathway/hsa00230+5152">Purine metabolism</a></td>
+    </tr>
+    <tr>
+        <td>25</td>
+        <td><a href="SPIB.html">SPIB</a></td>
+        <td>Transcription factor Spi-B</td>
+        <td><a href="#"> </a></td>
+    </tr>
+    <tr>
+        <td>26</td>
+        <td><a href="PADI2.html">PADI2</a></td>
+        <td>Protein-arginine deiminase type-2</td>
+        <td><a href="#"> </a></td>
+    </tr>
+    <tr>
+        <td>27</td>
+        <td><a href="CLDN8.html">CLDN8</a></td>
+        <td>Claudin-8</td>
+        <td><a href="https://www.kegg.jp/pathway/hsa04514+9073">Cell adhesion molecules</a></td>
+    </tr>
+        <tr>
+            <td>28</td>
+            <td><a href="NXPE4.html">NXPE4</a></td>
+            <td>NXPE family member 4</td>
+            <td><a href="#"> </a></td>
+    </tr>
+        <tr>
+            <td>29</td>
+            <td><a href="LDHD.html">LDHD</a></td>
+            <td>Probable D-lactate dehydrogenase, mitochondrial</td>
+            <td><a href="https://www.kegg.jp/pathway/hsa00620+197257">Pyruvate metabolism</a></td>
+    </tr>
+        <tr>
+            <td>30</td>
+            <td><a href="UGT2A3.html">UGT2A3</a></td>
+            <td>UDP-glucuronosyltransferase 2A3</td>
+            <td><a href="https://www.kegg.jp/pathway/hsa05207+79799">Chemical carcinogenesis - receptor activation</a></td>
+    </tr>
+        <tr>
+            <td>31</td>
+            <td><a href="MT1M.html">MT1M</a></td>
+            <td>Metallothionein-1M</td>
+            <td><a href="https://www.genome.jp/pathway/hsa04978+4499">Mineral absorption</a></td>
+    </tr>
+        <tr>
+            <td>32</td>
+            <td><a href="ANO7.html">ANO7</a></td>
+            <td>Anoctamin-7</td>
+            <td><a href="https://www.genome.jp/pathway/hsa04148+50636">Efferocytosis</a></td>
+    </tr>
+        <tr>
+            <td>33</td>
+            <td><a href="DHRS9.html">DHRS9</a></td>
+            <td>Dehydrogenase/reductase SDR family member 9</td>
+            <td><a href="https://www.genome.jp/pathway/hsa00830+10170">Retinol metabolism</a></td>
+    </tr>
+        <tr>
+            <td>34</td>
+            <td><a href="HSD11B2.html">HSD11B2</a></td>
+            <td>11-beta-hydroxysteroid dehydrogenase type 2</td>
+            <td><a href="https://www.genome.jp/pathway/hsa01100+3291">Metabolic pathways</a></td>
+    </tr>
+        <tr>
+            <td>35</td>
+            <td><a href="NXPE1.html">NXPE1</a></td>
+            <td>NXPE family member 1</td>
+            <td><a href="#"> </a></td>
+    </tr>
+        <tr>
+            <td>36</td>
+            <td><a href="MMP28.html">MMP28</a></td>
+            <td>Matrix metalloproteinase-28</td>
+            <td><a href="#"> </a></td>
+    </tr>
+        <tr>
+            <td>37</td>
+            <td><a href="GPT.html">GPT</a></td>
+            <td>Alanine aminotransferase 1</td>
+            <td><a href="https://www.genome.jp/pathway/hsa01100+2875">Metabolic pathways</a></td>
+    </tr>
+        <tr>
+            <td>38</td>
+            <td><a href="ADH1C.html">ADH1C</a></td>
+            <td>Alcohol dehydrogenase 1C</td>
+            <td><a href="https://www.genome.jp/pathway/hsa01100+126">Metabolic pathways</a></td>
+    </tr>
+        <tr>
+            <td>39</td>
+            <td><a href="IL1R2.html">IL1R2</a></td>
+            <td>Interleukin-1 receptor type 2</td>
+            <td><a href="https://www.genome.jp/pathway/hsa05202+7850">Transcriptional misregulation in cancer</a></td>
+    </tr>
+                        
+        <tr>
+            <td>40</td>
+            <td><a href="DHRS11.html">DHRS11</a></td>
+            <td>Dehydrogenase/reductase SDR family member 11</td>
+            <td><a href="https://www.genome.jp/pathway/hsa00140+79154">Steroid hormone biosynthesis</a></td>
+    </tr>
+        <tr>
+            <td>41</td>
+            <td><a href="HRCT1.html">HRCT1</a></td>
+            <td>Histidine-rich carboxyl terminus protein 1</td>
+            <td><a href="#"> </a></td>
+    </tr>
+        <tr>
+            <td>42</td>
+            <td><a href="VSIG2.html">VSIG2</a></td>
+            <td>V-set and immunoglobulin domain-containing protein 2</td>
+            <td><a href="#"> </a></td>
+    </tr>
+                        
+        <tr>
+            <td>43</td>
+            <td><a href="MT1G.html">MT1G</a></td>
+            <td>Metallothionein-1G</td>
+            <td><a href="https://www.genome.jp/pathway/hsa04978+4495">Mineral absorption</a></td>
+    </tr>
+        <tr>
+            <td>44</td>
+            <td><a href="SLC9A2.html">SLC9A2</a></td>
+            <td>Sodium/hydrogen exchanger 2</td>
+            <td><a href="#"> </a></td>
+    </tr>
+            <tr>
+                <td>45</td>
+            <td><a href="URAD.html">URAD</a></td>
+            <td>Putative 2-oxo-4-hydroxy-4-carboxy-5-ureidoimidazoline decarboxylase</td>
+                <td><a href="https://www.genome.jp/pathway/hsa01100+646625">Metabolic pathways</a></td>
+    </tr>
+            <tr>
+            <td>46</td>    
+            <td><a href="SCN9A.html">SCN9A</a></td>
+            <td>Sodium channel protein type 9 subunit alpha</td>
+                <td><a href="https://www.genome.jp/pathway/hsa04742+6335">Taste transduction</a></td>
+    </tr>
+        <tr>
+            <td>47</td>
+            <td><a href="TSPAN7.html">TSPAN7</a></td>
+            <td>Tetraspanin-7</td>
+            <td><a href="https://www.genome.jp/pathway/hsa05202+7102">Transcriptional misregulation in cancer</a></td>
+    </tr>
+    <tr>
+        <td>48</td>
+            <td><a href="HLA-G.html">HLA-G</a></td>
+            <td>HLA class I histocompatibility antigen, alpha chain G</td>
+        <td><a href="https://www.genome.jp/pathway/hsa04144+3135">Endocytosis</a></td>
+    </tr>
+        <tr>
+            <td>49</td>
+            <td><a href="JCHAIN.html">JCHAIN</a></td>
+            <td>Immunoglobulin J chain</td>
+            <td><a href="#"> </a></td>
+    </tr>
+            <tr>
+                <td>50</td>
+            <td><a href="ADTRP.html">ADTRP</a></td>
+            <td>Androgen-dependent TFPI-regulating protein</td>
+                <td><a href="#"> </a></td>
+    </tr>
+                <tr>
+                    <td>51</td>
+            <td><a href="TP53INP2.html">TP53INP2</a></td>
+            <td>Tumor protein p53-inducible nuclear protein 2</td>
+                    <td><a href="https://www.genome.jp/pathway/hsa04140+58476">Autophagy - animal</a></td>
+    </tr>
+                        <tr>
+                <td>52</td>            
+            <td><a href="MOGAT2.html">MOGAT2</a></td>
+            <td>2-acylglycerol O-acyltransferase 2</td>
+                     <td><a href="https://www.genome.jp/pathway/hsa01100+80168">Metabolic pathways</a></td>
+    </tr><tr>
+                <td>53</td>
+            <td><a href="NEURL1.html">NEURL1</a></td>
+            <td>E3 ubiquitin-protein ligase NEURL1</td>
+                <td><a href="#"> </a></td>
+    </tr><tr>
+                <td>54</td>
+            <td><a href="HOXD1.html">HOXD1</a></td>
+            <td>Homeobox protein Hox-D1</td>
+                        <td><a href="https://www.genome.jp/pathway/hsa04550+3231">Signaling pathways regulating pluripotency of stem cells</a></td>
+    </tr><tr>
+                <td>55</td>
+            <td><a href="MUC4.html">MUC4</a></td>
+            <td>Mucin-4</td>
+                        <td><a href="#"> </a></td>
+    </tr><tr>
+            <td>56</td>
+            <td><a href="CDHR5.html">CDHR5</a></td>
+            <td>Cadherin-related family member 5</td>
+                        <td><a href="#"> </a></td>
+    </tr><tr>
+            <td>57</td>
+    <td><a href="MT1F.html">MT1F</a></td>
+    <td>Metallothionein-1F</td>
+    <td><a href="https://www.genome.jp/pathway/hsa04978+4494">Mineral absorption</a></td>
+</tr>
+<tr>
+    <td>58</td>
+    <td><a href="EDN3.html">EDN3</a></td>
+    <td>Endothelin-3</td>
+    <td><a href="https://www.genome.jp/pathway/hsa04024+1908">cAMP signaling pathway</a></td>
+</tr>
+<tr>
+    <td>59</td>
+    <td><a href="ANPEP.html">ANPEP</a></td>
+    <td>Aminopeptidase N</td>
+    <td><a href="https://www.genome.jp/pathway/hsa01100+290">Metabolic pathways</a></td>
+</tr>
+<tr>
+    <td>60</td>
+    <td><a href="CHST5.html">CHST5</a></td>
+    <td>Carbohydrate sulfotransferase 5</td>
+    <td><a href="#"> </a></td>
+</tr>
+<tr>
+    <td>61</td>
+    <td><a href="ACADS.html">ACADS</a></td>
+    <td>Short-chain specific acyl-CoA dehydrogenase, mitochondrial</td>
+    <td><a href="https://www.genome.jp/pathway/hsa01100+35">Metabolic pathways</a></td>
+</tr>
+<tr>
+    <td>62</td>
+    <td><a href="MFSD4A.html">MFSD4A</a></td>
+    <td>Major facilitator superfamily domain-containing protein 4A</td>
+    <td><a href="#"> </a></td>
+</tr>
+<tr>
+    <td>63</td>
+    <td><a href="SLC22A18AS.html">SLC22A18AS</a></td>
+    <td>Beckwith-Wiedemann syndrome chromosomal region 1 candidate gene B protein</td>
+    <td><a href="#"> </a></td>
+</tr>
+<tr>
+    <td>64</td>
+    <td><a href="BCAS1.html">BCAS1</a></td>
+    <td>Breast carcinoma-amplified sequence 1</td>
+    <td><a href="#"> </a></td>
+</tr>
+<tr>
+    <td>65</td>
+    <td><a href="SULT1A1.html">SULT1A1</a></td>
+    <td>Sulfotransferase 1A1</td>
+    <td><a href="https://www.genome.jp/pathway/hsa05204+6817">Chemical carcinogenesis - DNA adducts</a></td>
+</tr>
+<tr>
+    <td>66</td>
+    <td><a href="ITM2C.html">ITM2C</a></td>
+    <td>Integral membrane protein 2C</td>
+    <td><a href="#"> </a></td>
+</tr>
+<tr>
+    <td>67</td>
+    <td><a href="HMGCS2.html">HMGCS2</a></td>
+    <td>Hydroxymethylglutaryl-CoA synthase, mitochondrial</td>
+    <td><a href="https://www.genome.jp/pathway/hsa03320+3158">PPAR signaling pathway</a></td>
+</tr>
+<tr>
+    <td>68</td>
+    <td><a href="ATP2A3.html">ATP2A3</a></td>
+    <td>Sarcoplasmic/endoplasmic reticulum calcium ATPase 3</td>
+    <td><a href="https://www.genome.jp/pathway/hsa04024+489">cAMP signaling pathway</a></td>
+</tr>
+<tr>
+    <td>69</td>
+    <td><a href="SLC28A2.html">SLC28A2</a></td>
+    <td>Sodium/nucleoside cotransporter 2</td>
+    <td><a href="#"> </a></td>
+</tr>
+<tr>
+    <td>70</td>
+    <td><a href="CDHR2.html">CDHR2</a></td>
+    <td>Cadherin-related family member 2</td>
+    <td><a href="#"> </a></td>
+</tr>
+<tr>
+    <td>71</td>
+    <td><a href="TENT5C.html">FAM46C/TENT5C</a></td>
+    <td>Terminal nucleotidyltransferase 5C</td>
+    <td><a href="#"> </a></td>
+</tr>
+<tr>
+    <td>72</td>
+    <td><a href="PIGR.html">PIGR</a></td>
+    <td>Polymeric immunoglobulin receptor</td>
+    <td><a href="https://www.genome.jp/pathway/hsa04672+5284">Intestinal immune network for IgA production</a></td>
+</tr>
+<tr>
+    <td>73</td>
+    <td><a href="MT1E.html">MT1E</a></td>
+    <td>Metallothionein-1E</td>
+    <td><a href="#"> </a></td>
+</tr>
+<tr>
+    <td>74</td>
+    <td><a href="NEU4.html">NEU4</a></td>
+    <td>Sialidase-4</td>
+    <td><a href="https://www.genome.jp/pathway/hsa01100+129807">Metabolic pathways</a></td>
+</tr>
+<tr>
+    <td>75</td>
+    <td><a href="FABP2.html">FABP2</a></td>
+    <td>Fatty acid-binding protein, intestinal</td>
+    <td><a href="https://www.genome.jp/pathway/hsa01100+129807">Metabolic pathways</a></td>
+</tr>
+<tr>
+    <td>76</td>
+    <td><a href="AMN.html">AMN</a></td>
+    <td>Protein amnionless</td>
+    <td><a href="https://www.genome.jp/pathway/hsa04977+81693">Vitamin digestion and absorption</a></td>
+</tr>
+<tr>
+    <td>77</td>
+    <td><a href="TMT1A.html">METTL7A/TMT1A</a></td>
+    <td>Thiol S-methyltransferase TMT1A</td>
+    <td><a href="#"> </a></td>
+</tr>
+<tr>
+    <td>78</td>
+    <td><a href="SPINK5.html">SPINK5</a></td>
+    <td>Serine protease inhibitor Kazal-type 5</td>
+    <td><a href="#"> </a></td>
+</tr>
+<tr>
+    <td>79</td>
+    <td><a href="ST6GALNAC6.html">ST6GALNAC6</a></td>
+    <td>Alpha-N-acetylgalactosaminide alpha-2,6-sialyltransferase 6</td>
+    <td><a href="https://www.genome.jp/pathway/hsa01100+30815">Metabolic pathways</a></td>
+</tr>
+<tr>
+    <td>80</td>
+    <td><a href="LGALS2.html">LGALS2</a></td>
+    <td>Galectin-2</td>
+    <td><a href="#"> </a></td>
+</tr>
+<tr>
+    <td>81</td>
+    <td><a href="FFAR4.html">FFAR4</a></td>
+    <td>Free fatty acid receptor 4</td>
+    <td><a href="#"> </a></td>
+</tr>
+    <tr>
+        <td>82</td>
+            <td><a href="IGLL5.html">IGLL5</a></td>
+            <td>Immunoglobulin lambda-like polypeptide 5</td>
+                <td><a href="#"> </a></td>
+    </tr>
+            <tr>
+                <td>83</td>
+            <td><a href="C15orf48.html">C15orf48/NMES1</a></td>
+            <td>Normal mucosa of esophagus-specific gene 1 protein</td>
+                <td><a href="#"> </a></td>
+    </tr>
+            <tr>
+                <td>84</td>
+            <td><a href="SPDEF.html">SPDEF</a></td>
+            <td>SAM pointed domain-containing Ets transcription factor</td>
+                <td><a href="#"> </a></td>
+    </tr>
+            <tr>
+                <td>85</td>
+            <td><a href="PLCG2.html">PLCG2</a></td>
+            <td>1-phosphatidylinositol 4,5-bisphosphate phosphodiesterase gamma-2</td>
+                <td><a href="https://www.genome.jp/pathway/hsa04064+5336">NF-kappa B signaling pathway</a></td>
+    </tr>
+            <tr>
+                <td>86</td>
+            <td><a href="HEPACAM2.html">HEPACAM2</a></td>
+            <td>HEPACAM family member 2</td>
+                <td><a href="#"> </a></td>
+    </tr>
+             <tr>
+                 <td>87</td>
+            <td><a href="TINAG.html">TINAG</a></td>
+            <td>Tubulointerstitial nephritis antigen</td>
+                 <td><a href="#"> </a></td>
+    </tr>
+            <tr>
+                <td>88</td>
+            <td><a href="ERN2.html">ERN2</a></td>
+            <td>Serine/threonine-protein kinase/endoribonuclease IRE2</td>
+                <td><a href="#"> </a></td>
+    </tr>
+            <tr>
+                <td>89</td>
+            <td><a href="RMDN2.html">RMDN2</a></td>
+            <td>Regulator of microtubule dynamics protein 2</td>
+                <td><a href="#"> </a></td>
+    </tr>
+             <tr>
+                 <td>90</td>
+            <td><a href="EDIL3.html">EDIL3</a></td>
+            <td>EGF-like repeat and discoidin I-like domain-containing protein 3</td>
+                 <td><a href="#"> </a></td>
+    </tr>
+            <tr>
+                <td>91</td>
+            <td><a href="PDE3A.html">PDE3A</a></td>
+            <td>cGMP-inhibited 3',5'-cyclic phosphodiesterase 3A</td>
+                <td><a href="https://www.genome.jp/pathway/hsa04024+5139">cAMP signaling pathway</a></td>
+    </tr>
+            <tr>
+                <td>92</td>
+            <td><a href="FAM83E.html">FAM83E</a></td>
+            <td>Protein FAM83E</td>
+                <td><a href="#"> </a></td>
+    </tr>
+        <tr>
+            <td>93</td>
+            <td><a href="PARP15.html">PARP15</a></td>
+            <td>Protein mono-ADP-ribosyltransferase PARP15</td>
+            <td><a href="#"> </a></td>
+    </tr>
+                        <tr>
+                <td>94</td>
+            <td><a href="KLK1.html">KLK1</a></td>
+            <td>Kallikrein-1</td>
+            <td><a href="https://www.genome.jp/pathway/hsa04614+3816">Renin-angiotensin system</a></td>
+    </tr>
+            <tr>
+                <td>95</td>
+            <td><a href="ADRA2A.html">ADRA2A</a></td>
+            <td>Alpha-2A adrenergic receptor</td>
+            <td><a href="https://www.genome.jp/pathway/hsa04022+150">cGMP-PKG signaling pathway
+</a></td>
+    </tr>
+            <tr>
+                <td>96</td>
+            <td><a href="MT2A.html">MT2A</a></td>
+            <td>Metallothionein-2</td>
+            <td><a href="https://www.genome.jp/pathway/hsa04978+4502">Mineral absorption</a></td>
+    </tr>
+            <tr>
+                <td>97</td>
+            <td><a href="SPON1.html">SPON1</a></td>
+            <td>Spondin-1</td>
+            <td><a href="#"> </a></td>
+    </tr>
+            <tr>
+                <td>98</td>
+            <td><a href="MT1X.html">MT1X</a></td>
+            <td>Metallothionein-1X</td>
+            <td><a href="https://www.genome.jp/pathway/hsa04978+4501">Mineral absorption</a></td>
+    </tr>
+                        <tr>
+                <td>99</td>
+            <td><a href="GLOD5.html">GLOD5</a></td>
+            <td>Glyoxalase domain-containing protein 5</td>
+            <td><a href="#"> </a></td>
+    </tr>
+                        <tr>
+                <td>100</td>
+            <td><a href="IKZF3.html">IKZF3</a></td>
+            <td>Zinc finger protein Aiolos</td>
+            <td><a href="#"> </a></td>
+    </tr>
+                        <tr>
+                <td>101</td>
+            <td><a href="MACIR.html">C5orf30/MACIR</a></td>
+            <td>Macrophage immunometabolism regulator</td>
+            <td><a href="#"> </a></td>
+    </tr>
+                        <tr>
+                <td>102</td>
+            <td><a href="ACVRL1.html">ACVRL1</a></td>
+            <td>Serine/threonine-protein kinase receptor</td>
+            <td><a href="https://www.genome.jp/pathway/hsa04060+94">Cytokine-cytokine receptor interaction</a></td>
+    </tr>
+                        <tr>
+                <td>103</td>
+            <td><a href="SLAMF7.html">SLAMF7</a></td>
+            <td>SLAM family member 7</td>
+            <td><a href="#"> </a></td>
+    </tr>
+                        <tr>
+                    <td>104</td>
+            <td><a href="DOCK5.html">DOCK5</a></td>
+            <td>Dedicator of cytokinesis protein 5</td>
+            <td><a href="#"> </a></td>
+    </tr>
+                        <tr>
+                <td>105</td>
+            <td><a href="CLEC2D.html">CLEC2D</a></td>
+            <td>C-type lectin domain family 2 member D</td>
+            <td><a href="#"> </a></td>
+    </tr>
+                        <tr>
+                    <td>106</td>
+            <td><a href="GSN.html">GSN</a></td>
+            <td>Gelsolin</td>
+            <td><a href="https://www.genome.jp/pathway/hsa05203+2934">Viral carcinogenesis</a></td>
+    </tr>
+                        <tr>
+                <td>107</td>
+            <td><a href="YBX2.html">YBX2</a></td>
+            <td>Y-box-binding protein 2</td>
+            <td><a href="#"> </a></td>
+    </tr>
+
+                        
+                            
+        <!-- Add more rows here -->
+        </tbody>
+      </table>
+     </div>
+     </div>
+    </div>
+</section>
+
+<!--------- Footer Section --------->
+    
+<footer>
+  <div class="footer-container">
+    <div class="footer-links">
+      <a href="home.html">Home</a>
+      <a href="Query.html">Query</a>
+      <a href="pathway_list.html">Pathways</a>
+        <a href="natural_compound_list.html">Compounds</a>
+        <a href="gene_list.html">Gene</a>
+      <a href="faq.html">FAQs</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="social-icons">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+    </div>
+  </div>
+</footer>   
+
+
+ <!-- Add your JavaScript code -->
+
+<script>
+                        document.getElementById("search-input").addEventListener("keyup", function() {
+                            var searchTerm = this.value.toLowerCase();
+                            var tableRows = document.querySelectorAll("#gene-table tbody tr");
+                            tableRows.forEach(function(row) {
+                                var geneName = row.cells[1].textContent.toLowerCase();
+                                var proteinName = row.cells[2].textContent.toLowerCase();
+                                var pathway = row.cells[3].textContent.toLowerCase();
+                                if (geneName.includes(searchTerm) || proteinName.includes(searchTerm) || pathway.includes(searchTerm)) {
+                                    row.style.display = "";
+                                } else {
+                                    row.style.display = "none";
+                                }
+                            });
+                        });
+                    </script>
+
+   
+    
+
+</body>
+</html>
