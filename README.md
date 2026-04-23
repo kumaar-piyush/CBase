@@ -28,7 +28,7 @@ Pathway data is sourced from Reactome and KEGG, while protein–protein interact
 | 🧬 Gene Information | Colon cancer-associated genes |
 | 📊 Expression Data | Gene activity (up/down regulation) |
 | 🧫 Compound Details | Plant-based bioactive compounds with chemical and physicochemical properties | 🧬 Protein–Protein Interactions | Interaction networks derived from STRING and BioGRID |
-| 🛤️ Pathways | Biological pathways from KEGG and Reactome |
+| 🛤️ Pathways | Biological pathways from KEGG |
 
 ---
 
@@ -57,7 +57,7 @@ Pathway data is sourced from Reactome and KEGG, while protein–protein interact
   <img src="https://skillicons.dev/icons?i=html,css,js" />
 </p>
 
-- 🌐 HTML, CSS, JavaScript  
+- 🌐 HTML, CSS, JavaScript 
 - 📊 Structured biological datasets  
 - 🧬 Bioinformatics & computational biology  
 
